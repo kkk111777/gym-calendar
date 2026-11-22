@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gym Calendar
 
-## Getting Started
+筋トレ・睡眠・疲れの記録から、次のジムの日とメニュー・重さを提案する Web アプリです。
+提案のルールは、運動の指針や研究の結果をもとに決めています。
 
-First, run the development server:
+> **状況：開発中（フェーズ0：土台づくり）**
+> まだ使える機能はありません。
+
+## できるようになること（予定）
+
+- 筋トレ・体重・体調（睡眠・疲れ・筋肉痛）の記録
+- 回復の推定から、次のジムの日の候補を出す
+- 目的（やせたい・体力をつけたい・筋肉を大きくしたい など）に合ったメニューと重さの提案
+- ジムに行った回数・重さの伸び・体重のグラフ
+- メールアドレスとパスワードでのログイン（自分の記録は自分だけが見られる）
+
+## 使っている技術
+
+| 分類 | 技術 |
+| --- | --- |
+| 画面と処理 | [Next.js](https://nextjs.org/)（App Router）、[TypeScript](https://www.typescriptlang.org/) |
+| 見た目 | [Tailwind CSS](https://tailwindcss.com/) |
+| カレンダー表示 | [FullCalendar](https://fullcalendar.io/)（予定） |
+| データとログイン | [Supabase](https://supabase.com/)（予定） |
+| 公開 | [Vercel](https://vercel.com/)（予定） |
+
+## 手元で動かす
+
+[Node.js](https://nodejs.org/)（LTS 版）が必要です。
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで <http://localhost:3000> を開きます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 資料
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [要件定義書 v1.8](docs/requirements-v1.8.md)：前身の Google Apps Script 版（作者ひとり用）の要件定義書です
 
-## Learn More
+## 著作権
 
-To learn more about Next.js, take a look at the following resources:
+Copyright (c) 2026 kkk111777. All rights reserved.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+このリポジトリのコードと文書は、読んで参考にするために公開しています。
+作者の許可なく、コピーして使うこと・改変すること・配布することはできません。

@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# supabase (local work files)
+supabase/.temp/
+supabase/.branches/
